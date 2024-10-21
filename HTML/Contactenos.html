@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/Style.css">
+    <title>Contactenos</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="Index.html" class="logo-apolo">
+                <img src="/IMG/apolo_logo.png" alt="logo de la compañia">
+                <h2 class="nombre-empresa">Cine Apolo</h2>
+            </a>
+            <nav>
+                <a href="#somosApolo">Acerca de</a>
+                <a href="#demostracion">Cartelera</a>
+                <a href="#">Contactenos</a>
+                <a href="Login.html">Inicio Sesión/Registro</a>
+            </nav>
+        </div>
+    </header>
+    <section id="contactenos">
+        <div class="container">
+            <h2>Contactenos</h2>
+            <div class="contactenos">
+                <form action="#" method="post">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Nombre del contacto" required><br><br>
+
+                    <label for="email">Correo Electronico:</label>
+                    <input type="email" id="email" name="email" placeholder="tunombrecorreo@dominio.com" required><br><br>
+
+                    <label for="subject">Asunto a tratar:</label>
+                    <select name="subject" id="subject" required>
+                        <option value="0">- - - -</option>
+                        <option value="1">Consulta general</option>
+                        <option value="2">Compra de boletos</option>
+                        <option value="3">Eventos especiales</option>
+                        <option value="4">Quejas y reclamos</option>
+                        <option value="5">Alquiler de espacios</option>
+                    </select><br><br>
+
+                    <label for="message">Mensaje:</label>
+                    <textarea name="message" id="message" rows="6" placeholder="Aclaraciones de tu duda" required></textarea><br><br>
+                    <button type="submit" class="Contact-btn">Enviar</button>          
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; Cine Apolo 2024</p>
+        </div>
+    </footer>
+</body>
+</html>

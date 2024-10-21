@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/Style.css">
+    <script defer src="/JS/Registro.js"></script>
+    <title>Registro</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="Index.html" class="logo-apolo">
+                <img src="/IMG/apolo_logo.png" alt="logo de la compañia">
+                <h2 class="nombre-empresa">Cine Apolo</h2>
+            </a>
+            <nav>
+                <a href="#somosApolo">Acerca de</a>
+                <a href="#demostracion">Pofesores Estudiantes Institución</a>
+                <a href="Contactenos.html">Contactenos</a>
+                <a href="#">Inicio Sesión/Registro</a>
+            </nav>
+        </div>
+    </header>
+    <section id="registro">
+        <div class="container">
+            <h2>Registrese</h2>
+            <div class="registro">
+                <form action="#" method="post" id="registroform">
+                    <label for="text">Nombre:</label>
+                    <input type="text" name="name" id="name" placeholder="Nombre de usuario" required><br><br>
+
+                    <label for="text">Apellidos:</label>
+                    <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required><br><br>
+
+                    <label for="text">Documento de identidad</label>
+                    <select name="documentoIdentidad" id="documentoIdentidad" required>
+                        <option value="TI">Tarjeta de identidad</option>
+                        <option value="CC">Cédula de ciudadanía</option>
+                        <option value="TE">Tarjeta de extranjería</option>
+                        <option value="CE">Cédula de extranjería</option>
+                    </select><br><br>
+
+                    <label for="text">Número de documento</label>
+                    <input type="number" id="numeroDocumento" name="numeroDocumento"required placeholder="Ingrese el número de su documento"><br><br>
+
+                    <label for="text">Fecha de nacimiento:</label>
+                    <input type="date" id="date" name="date" required><br><br>
+
+                    <label for="text">Género:</label>
+                    <select name="genero" id="genero" required>
+                        <option value="0">Elige una opción</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Femenino</option>
+                    </select><br><br>
+
+                    <label for="text">Teléfono</label>
+                    <input type="number" name="telefono" id="telefono" required placeholder="Ingrese número de teléfono">
+
+                    <label for="text">Correro Electronico</label>
+                    <input type="email" name="email" id="email" placeholder="tunombrecorreo@dominio.com" required><br><br>
+
+                    <label for="text">Contraseña</label>
+                    <input type="password" name="password" id="password" placeholder="Contraseña" required><br><br>
+
+                    <div class="checkbox-container">
+                        <input type="checkbox"> Deseo recibir en mi correo electrónico sin ningún costo el boletín informativo de Teatro Apolo S.A.<br><br>
+                        <input type="checkbox" required> Autorizo recibir información de promociones, eventos y lanzamiento de Teatro Apolo S.A por email, EME, llamadas telefónicas o WhatsApp.<br><br>
+                    </div>
+
+                    <button type="submit">Crear cuenta</button>
+
+                    <p>¿Ya tienes cuenta?<a href="Login.html">Iniciar sesión</a></p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; Cine Apolo 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
